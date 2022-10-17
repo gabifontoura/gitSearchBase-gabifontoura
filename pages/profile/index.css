@@ -1,1 +1,67 @@
 /* Desenvolva sua estilização aqui...*/
+body{
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
+
+}
+
+.header{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 18rem;
+
+
+}
+
+.menu-nav{
+  
+    gap: 1rem;
+}
+
+.project-list{
+    list-style: none;
+    color: var(--color-grey-7);
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 16rem;
+
+
+}
+
+.card{
+    border: 2px solid var(--color-grey-6);
+    border-radius: 0.5rem;
+    width: 23.75rem;
+    height: 15.25;
+    padding: 2.5rem 1.688rem;
+    gap: 1.25rem;
+  
+}
+
+.card:hover{
+    border: 2px solid var(--color-grey-7);
+    background-color: var(--color-grey-1);
+
+}
+
+.profile{
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+}
+.info-user{
+    gap:0.875rem ;
+}
+.user-description{
+    color:var(--color-grey-6);
+}
+.project-description{
+    color:var(--color-grey-6);
+}
+
+.btns-card{
+    gap: 0.875rem;
+}

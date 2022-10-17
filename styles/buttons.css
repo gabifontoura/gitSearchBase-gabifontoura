@@ -1,0 +1,58 @@
+.btn-home{
+    background-color: var(--color-brand-2);
+    height: 2.375rem;
+    width: 19.75rem;
+    color: var(--color-grey-7);
+    border: none;
+    border-radius: 0.25rem;
+
+}
+
+.btn-outline{
+    background-color: transparent;
+    font-size:0.875rem;
+    color: var(--color-grey-7);
+    border: 1px solid #FFFFFF;
+    border-radius: 0.25rem;
+    height: 1.75rem;
+    padding: 0 0.5rem;
+
+
+}
+.btn-default-small{
+    background-color: var(--color-brand-2);
+    font-size:0.875rem;
+    color: var(--color-grey-7);
+    border-radius: 0.25rem;
+    height: 1.75rem;
+    padding: 0 0.5rem;
+    border: none;
+
+
+}
+
+.btn-default{
+    background-color: var(--color-brand-2);
+    font-size:0.875rem;
+    color: var(--color-grey-7);
+    font-weight: 600;
+    height: 2.375rem;
+    width: fit-content;
+    padding: 0 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+
+}
+.btn-default-secondary{
+    background-color: var(--color-grey-3);
+    font-size:0.875rem;
+    color: var(--color-grey-7); 
+    font-weight: 600;
+    height: 2.375rem;
+    width: fit-content;
+    padding: 0 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+
+}
+ 

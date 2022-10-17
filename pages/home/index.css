@@ -1,1 +1,44 @@
-/* Desenvolva sua estilização aqui...*/
+
+.input-user-search{
+    border: 0.063rem solid var(--color-grey-7);
+    border-radius: 0.25rem;
+    width: 19.75rem;
+    height: 2.375rem;
+    color: var(--color-grey-7);
+    background-color:var(--color-grey-1);
+    padding: 0.63rem;
+    margin: 1rem 0 1.25rem 0;
+}
+
+.user-search {
+    height: 100vh;
+    width: 50%;
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
+    padding: 18% 12% 0 12%;
+
+}
+
+.git-search-recentes{
+    height: 100vh;
+    width: 50%;
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-7);
+    padding: 18% 12%;
+
+ 
+}
+.perfis-list{
+    list-style: none;
+    gap:0.5rem ;
+}
+.perfis-recentes {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.title-section{
+    margin-bottom: 2.813rem;
+}
