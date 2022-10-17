@@ -2,16 +2,19 @@
 body{
     background-color: var(--color-grey-2);
     color: var(--color-grey-7);
-
+    
 }
 
+.menu-nav{
+   gap: 1rem;
+   
+}
 .header{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
     padding: 2rem 18rem;
-
+    width: 100%;
 
 }
 
@@ -45,7 +48,7 @@ body{
 }
 
 .profile{
-    justify-content: space-between;
+   
     align-items: center;
     gap: 1.25rem;
 }
