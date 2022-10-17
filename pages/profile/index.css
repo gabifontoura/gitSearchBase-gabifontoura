@@ -15,10 +15,7 @@ body{
 
 }
 
-.menu-nav{
-  
-    gap: 1rem;
-}
+
 
 .project-list{
     list-style: none;
@@ -52,12 +49,19 @@ body{
     align-items: center;
     gap: 1.25rem;
 }
+
+.user-photo img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
 .info-user{
     gap:0.875rem ;
 }
 .user-description{
     color:var(--color-grey-6);
 }
+
 .project-description{
     color:var(--color-grey-6);
 }
