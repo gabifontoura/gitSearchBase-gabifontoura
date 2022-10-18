@@ -27,7 +27,6 @@
     height: 1.75rem;
     padding: 0 0.5rem;
 
-
 }
 .btn-default-small{
     background-color: var(--color-brand-2);
@@ -37,6 +36,7 @@
     height: 1.75rem;
     padding: 0 0.5rem;
     border: none;
+    text-decoration: none;
 
 
 }
@@ -51,6 +51,9 @@
     padding: 0 1.5rem;
     border-radius: 0.5rem;
     border: none;
+    text-decoration: none;
+    align-content: center;
+
 
 }
 .btn-default-secondary{

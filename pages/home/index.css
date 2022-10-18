@@ -9,6 +9,18 @@
     padding: 0.63rem;
     margin: 1rem 0 1.25rem 0;
 }
+.input-error{
+    border: 0.063rem solid var(--color-brand-1);
+
+    border-radius: 0.25rem;
+    width: 19.75rem;
+    height: 2.375rem;
+    color: var(--color-grey-7);
+    background-color:var(--color-grey-1);
+    padding: 0.63rem;
+    margin: 1rem 0 1.25rem 0;
+
+}
 
 .user-search {
     height: 100vh;
@@ -43,3 +55,8 @@
     margin-bottom: 2.813rem;
 }
 
+.user-photo-history {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
