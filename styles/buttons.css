@@ -5,7 +5,17 @@
     color: var(--color-grey-7);
     border: none;
     border-radius: 0.25rem;
+    transition: background .25s ease-in-out;
 
+}
+.btn-home:disabled{
+    background-color: var(--color-brand-2);
+    height: 2.375rem;
+    width: 19.75rem;
+    color: var(--color-grey-7);
+    border: none;
+    border-radius: 0.25rem;
+    opacity: 50%;
 }
 
 .btn-outline{
@@ -53,6 +63,7 @@
     padding: 0 1.5rem;
     border-radius: 0.5rem;
     border: none;
+    transition: background .25s ease-in-out;
 
 }
  

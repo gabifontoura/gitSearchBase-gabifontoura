@@ -1,6 +1,7 @@
 
 async function getApiDataTitle(){
-    const data = await fetch ("http://api.github.com/users/gabifontoura")
+    const input = document.querySelector(".input-user-search")
+    const data = await fetch (`http://api.github.com/users/${input.value}`)
     const dataJson = await data.json();
     document.head.insertAdjacentHTML("beforeend",`
     <title>${dataJson.name}</title>
@@ -24,10 +25,9 @@ async function getApiDataHeader(){
                 </div>
             </section>
 
-            
             <section class="menu-nav flex">
                 <button class="btn-default">Email</button>
-                <button class="btn-default-secondary">Trocar de usuário</button>
+                <a href="../home/index.html"><button class="change-user btn-default-secondary">Trocar de usuário</button></a>
             </section>
        </header>
     `)
@@ -40,33 +40,24 @@ getApiDataHeader()
 async function getApiDataRepos(){
     const data = await fetch ("http://api.github.com/users/gabifontoura")
     const dataJson = await data.json();
-    document.body.insertAdjacentHTML("beforeend",`
+    const repos = dataJson.map((repository) => document.body.insertAdjacentHTML("aftereend",`
     <ul class="project-list flex">
 
     <li class="card flex column">
-    <h3 class="project-name title-2">Project Module 2 - Kenzie...</h3>
-    <p class="project-description text-2">Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</p>
-    <div class="btns-card flex">
-        <button class="btn-default-small">Repositório</button>
-        <button class="btn-outline">Demo</button>
-    </div>
-
+        <h3 class="project-name title-2">${repository.name}</h3>
+        <p class="project-description text-2">Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</p>
+        <div class="btns-card flex">
+            <a href="${repository.html_url}" class="btn-default-small>Repositório</a>
+            <button class="btn-outline">Demo</button>
+        </div>
     </li>
-    <li class="card flex column">
-    <h3 class="project-name title-2">Project Module 2 - Kenzie...</h3>
-    <p class="project-description text-2">Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</p>
-    <div class="btns-card flex">
-        <button class="btn-default-small">Repositório</button>
-        <button class="btn-outline">Demo</button>
-    </div>
-
-    </li>
-
 </ul>
  
-`)
-    
-return data
+`))
+return repos
 }
 
+
 getApiDataRepos()
+
+

@@ -23,7 +23,7 @@
 
           <h2 class="text-1">Achados Recentemente</h2>
           <ul class="perfis-list flex">
-            <li>
+            <!-- <li>
               <img src="../../src/img/Ellipse 1.svg" alt="">  
             </li>
             <li>
@@ -31,16 +31,18 @@
             </li> 
             <li>
               <img src="../../src/img/Ellipse 3.svg" alt="">
-            </li>
+            </li> -->
           </ul>
         </div>
       </header>
-            <section class="user-search flex column ">
+
+            <form class="user-search flex column ">
               <h2 class="title-section title-2">Procurar por um usuário</h2>
               <label class="label-user text-2" for="user">Usuário github</label>
-              <input class="input-user-search" id="user" type="text" placeholder="Digite um usuário do github aqui...">
-              <button class="btn-home">Ver perfil do github</button>
-            </section>
+              <input class="input-user-search" id="user" type="text" placeholder="Digite um usuário do github aqui..." autocomplete="off">
+              <button class="btn-home btn-ver-perfil" disabled>Ver perfil do github</button>
+              
+            </form>
                             
     </main>
     <script src="index.js"></script>
