@@ -59,4 +59,31 @@
     width: 2rem;
     height: 2rem;
     border-radius: 100%;
+  
 }
+
+.history-users{
+    display: flex;
+    justify-content: baseline;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hover-acessar-perfil{
+    display: none;
+    position:absolute;
+    background: #fff;
+    color: #000;
+    width: max-content;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 0.15rem 0.5rem;
+    justify-self: center;
+    top: -70%;
+    left: 45%;
+   
+}
+
+
+

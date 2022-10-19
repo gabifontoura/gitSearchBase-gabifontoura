@@ -33,10 +33,10 @@
     font-size:0.875rem;
     color: var(--color-grey-7);
     border-radius: 0.25rem;
-    height: 1.75rem;
-    padding: 0 0.5rem;
+    padding: 0.38rem 0.5rem;
     border: none;
     text-decoration: none;
+    align-self: baseline;
 
 
 }
@@ -46,13 +46,14 @@
     font-size:0.875rem;
     color: var(--color-grey-7);
     font-weight: 600;
-    height: 2.375rem;
     width: fit-content;
-    padding: 0 1.5rem;
     border-radius: 0.5rem;
     border: none;
     text-decoration: none;
-    align-content: center;
+    padding: 0.6rem 1.5rem;
+    align-self: center;
+
+ 
 
 
 }

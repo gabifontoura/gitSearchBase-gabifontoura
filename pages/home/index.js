@@ -22,20 +22,20 @@ async function getUser(endPoint) {
         }
 
         const data = await response.json();
-        
-        const encontrado = historyUsers.find((element)=> element.login == data.login )
 
-        if(!encontrado){
-            
+        const encontrado = historyUsers.find((element) => element.login == data.login)
+
+        if (!encontrado) {
+
             historyUsers.push(data)
         }
 
         window.localStorage.setItem("historyUsers", JSON.stringify(historyUsers))
-        
-        
+
+
         const user = localStorage.getItem("user")
 
-        if(!user){
+        if (!user) {
             localStorage.setItem("user", JSON.stringify(data))
         }
         window.location.replace("../profile/index.html")
@@ -57,8 +57,8 @@ async function getUser(endPoint) {
 const btnVerPerfil = document.querySelector(".btn-ver-perfil")
 btnVerPerfil.addEventListener('click', (e) => {
     e.preventDefault()
-    if(historyUsers.length > 2){
-        historyUsers.splice(0,1)
+    if (historyUsers.length > 2) {
+        historyUsers.splice(0, 1)
     }
     getUser(input.value)
 })
@@ -85,29 +85,50 @@ toggleBtn()
 
 
 function renderHistoryUsers() {
-    
+
     const ul = document.querySelector(".perfis-list")
-    
+
     ul.innerText = ""
-    
-    
+
+
     historyUsers.forEach((element) => {
-        
+
         const li = document.createElement("li")
+        const hover = document.createElement("span")
         const img = document.createElement("img")
+
+        li.classList = 'history-users'
+        hover.innerText = 'Acessar Perfil'
+        hover.classList = 'hover-acessar-perfil'
+    
         img.src = element.avatar_url
         img.classList = 'user-photo-history'
+        img.onmouseover = function() {showMessage()}
+        img.onmouseout = function () {hideMessage()}
         img.addEventListener('click', () => {
-      
+
             getUser(element.login)
         })
-        li.append(img)
+        li.append(img, hover)
         ul.append(li)
-        
-    })
 
-  
+    })
+    
+    
+
+
 }
 
 renderHistoryUsers()
 
+const hover = document.querySelector(".hover-acessar-perfil");
+
+// mostra a mensagem
+function showMessage() {
+    hover.style.display = "block";
+
+}
+// esconde a mensagem
+function hideMessage() {
+    hover.style.display = "none";
+}
