@@ -1,4 +1,3 @@
-/* Desenvolva sua lógica aqui...*/
 
 const historyUsers = JSON.parse(window.localStorage.getItem("historyUsers")) || []
 const input = document.querySelector(".input-user-search")
@@ -114,21 +113,23 @@ function renderHistoryUsers() {
 
     })
     
-    
-
 
 }
 
 renderHistoryUsers()
 
+
+
+
+
+
 const hover = document.querySelector(".hover-acessar-perfil");
 
-// mostra a mensagem
 function showMessage() {
     hover.style.display = "block";
 
 }
-// esconde a mensagem
+
 function hideMessage() {
     hover.style.display = "none";
 }
