@@ -54,7 +54,7 @@ async function getApiDataHeader() {
     if (historyUsers.length > 2) {
       historyUsers.splice(0, 1);
     }
-    window.location.replace("gitSearchBase-gabifontoura/pages/home/index.html");
+    window.location.replace("/pages/home/index.html");
   });
 
   figure.append(img);
