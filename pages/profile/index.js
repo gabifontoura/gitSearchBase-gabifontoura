@@ -83,28 +83,26 @@ async function getApiDataRepos() {
     const pDescription = document.createElement("p");
     const div = document.createElement("div");
     const aRepository = document.createElement("a");
-    const btn = document.createElement("button");
+    const aDemo = document.createElement("a");
 
     li.classList = "card flex column";
     h3repoName.classList = "project-name title-2";
     pDescription.classList = "project-description text-2";
     div.classList = "btns-card flex";
     aRepository.classList = "btn-default-small";
-    btn.classList = "btn-outline";
+    aDemo.classList = "btn-outline";
 
     h3repoName.innerText = repository.name;
     pDescription.innerText = repository.description;
     aRepository.href = repository.html_url;
     aRepository.target = "_blank";
     aRepository.innerText = "Repositório";
-    btn.innerText = "Demo";
+    aDemo.innerText = "Acesse";
+    aDemo.href = repository.homepage 
 
-    div.append(aRepository, btn);
+    div.append(aRepository, aDemo);
     li.append(h3repoName, pDescription, div);
     ul.append(li);
-
-    console.log(dataJson);
-    console.log(repository.html_url);
 
   });
 
